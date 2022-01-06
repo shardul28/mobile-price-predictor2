@@ -7,7 +7,7 @@ from PIL import Image
 model = pickle.load(open('model.sav', 'rb'))
 
 st.title('Mobile Price Prediction')
-st.sidebar.header('Player Data')
+st.sidebar.header('Mobile Data')
 #image = Image.open('bb.jpg')
 #st.image(image, '')
 
@@ -72,7 +72,7 @@ def user_report():
   return report_data
 
 user_data = user_report()
-st.header('Player Data')
+st.header('Mobile Data')
 st.write(user_data)
 
 salary = model.predict(user_data)
