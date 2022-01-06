@@ -7,6 +7,8 @@ from PIL import Image
 model = pickle.load(open('model.sav', 'rb'))
 
 st.title('Mobile Price Prediction')
+original_title = '<h1 style="color:White; font-size: 20px;">Created by Shardul Tambe</h1>'
+st.markdown(original_title, unsafe_allow_html=True)
 st.sidebar.header('Mobile Data')
 #image = Image.open('bb.jpg')
 #st.image(image, '')
